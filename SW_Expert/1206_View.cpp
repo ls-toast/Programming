@@ -1,3 +1,8 @@
+/*
+SW Expert Academy 1206 View
+URL : https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV134DPqAA8CFAYh
+*/
+
 #include <stdio.h>
 
 int n;
