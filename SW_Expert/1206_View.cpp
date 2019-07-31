@@ -1,5 +1,9 @@
 /*
 SW Expert Academy 1206 View
+
+Memory : 13,364kb
+RunTime : 7ms
+
 URL : https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV134DPqAA8CFAYh
 */
 
