@@ -1,3 +1,12 @@
+/*
+SW Expert Academy 1209 Sum
+
+Memory : 12,676 Kb
+RunTime : 22ms
+
+URL : https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV13_BWKACUCFAYh
+*/
+
 #include <iostream>
 #include <algorithm>
 #include <vector>
