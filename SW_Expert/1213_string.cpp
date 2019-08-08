@@ -1,6 +1,7 @@
 /*
  * SW Expert Academy 1213 String
  * 
+ * Difficulty : D3
  * Memory : 12,488 Kb
  * Runtime : 6ms
  *
