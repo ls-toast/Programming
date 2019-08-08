@@ -1,6 +1,7 @@
 /*
  * SW Expert Academy 1208 Flatten
  *
+ * Difficulty : D3
  * Memory : 12,636 Kb
  * RunTime : 55ms
  *
