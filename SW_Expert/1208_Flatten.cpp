@@ -1,10 +1,11 @@
 /*
  * SW Expert Academy 1208 Flatten
  *
+ * Difficulty : D3
  * Memory : 12,636 Kb
  * RunTime : 55ms
  *
- * URL : https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV14QpAaAAwCFAYi&categoryId=AV14QpAaAAwCFAYi
+ * URL : https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV139KOaABgCFAYh
  * */
 
 #include <iostream>

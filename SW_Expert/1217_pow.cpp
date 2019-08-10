@@ -1,6 +1,7 @@
 /*
  * SW Expert Academy 1217 pow
  *
+ * Difficulty : D3
  * Memory : 12,516 Kb
  * Runtime : 7ms
  *
