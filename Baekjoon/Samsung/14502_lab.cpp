@@ -1,3 +1,12 @@
+/*
+ * Beakjoon 14502 Lab
+ *
+ * Memory : 1996 KB
+ * Run-Time : 228ms
+ *
+ * URL : https://www.acmicpc.net/problem/14502
+ * */
+
 #include <iostream>
 #include <algorithm>
 #include <cstring>
