@@ -21,15 +21,13 @@ void spread()
     queue <pair<int,int> > tQ;
     tQ = Q;
     memcpy(tarr,arr,sizeof(arr));
-    while(tQ.size())
+    while(!tQ.empty())
     {
         y = tQ.front().first;
         x = tQ.front().second;
+        tQ.pop();
         if(visit[y][x])
-        {
-            tQ.pop();
             continue;
-        }
         else
         {
             for(i = 0 ; i < 4; i ++)
@@ -98,5 +96,5 @@ int main()
         }
     }
     wall(0);
-    //cout << ans << endl;
+    cout << ans << endl;
 }
