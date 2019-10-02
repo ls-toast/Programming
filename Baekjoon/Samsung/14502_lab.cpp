@@ -26,26 +26,18 @@ void spread()
         y = tQ.front().first;
         x = tQ.front().second;
         tQ.pop();
-        if(visit[y][x])
-            continue;
-        else
-        {
             for(i = 0 ; i < 4; i ++)
             {
                 int tmpy = y + ny[i];
                 int tmpx = x + nx[i];
                 if(tmpy >= n || tmpy < 0 || tmpx >= m || tmpx < 0)
                     continue;
-                else if(tarr[tmpy][tmpx] == 0 && visit[tmpy][tmpx] == 0)
+                else if(tarr[tmpy][tmpx] == 0)
                 {
-                    y = tmpy;
-                    x = tmpx;
-                    tQ.push(make_pair(y,x));
-                    visit[y][x] = 1;
-                    tarr[y][x] = 2;
+                    tQ.push(make_pair(tmpy,tmpx));
+                    tarr[tmpy][tmpx] = 2;
                 }
             }
-        }
     }
     for(i = 0 ; i < n ; i ++)
     {
@@ -55,7 +47,7 @@ void spread()
                 cnt ++;
         }
     }
-    max(ans,cnt);
+    ans = max(ans,cnt);
 }
 
 void wall(int cnt)
@@ -83,6 +75,7 @@ void wall(int cnt)
 
 int main()
 {
+    std::ios::sync_with_stdio(false);
     int i,j;
     cin >> n >> m;
     for(i = 0 ; i < n ; i ++)
