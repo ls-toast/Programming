@@ -16,7 +16,6 @@ using namespace std;
 int n,m;
 int arr[8][8];
 int ans;
-bool visit[8][8];
 queue <pair<int,int> > Q;
 
 void spread()
@@ -65,7 +64,6 @@ void wall(int cnt)
     if(cnt == 3)
     {
         spread();
-        memset(visit,0,sizeof(visit));
         return;
     }
     for(i = 0; i < n; i ++)
