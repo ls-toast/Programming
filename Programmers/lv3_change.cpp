@@ -11,7 +11,7 @@ int solution(int n, vector<int> money) {
     dp[0] = 1;
     for(i = 1; i <= n; i ++)
     {
-        if(dp[i] % money[0] == 0)
+        if(i % money[0] == 0)
             dp[i] = 1;
     }
     for(i = 1; i < money.size(); i ++)
@@ -30,8 +30,8 @@ int main()
     int n;
     vector <int> arr;
     cin >> n;
-    arr.emplace_back(1);
     arr.emplace_back(2);
+    arr.emplace_back(3);
     arr.emplace_back(5);
     cout << solution(n, arr) << endl;
 }
