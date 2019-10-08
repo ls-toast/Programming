@@ -1,5 +1,3 @@
-//http://boj.kr/b3164c4fac5945f3ad005b19c0181ec5
-
 #include <iostream>
 #include <math.h>
 #include <queue>
@@ -8,10 +6,10 @@ using namespace std;
 deque <int> dq[4];
 
 void rotate(int idx, int dir, int widx) {
+    if(idx<0 || idx>3) return;
+
     int left = dq[idx][6];
     int right = dq[idx][2];
-
-    if(idx<0 || idx>3) return;
 
     if (dir == 1) {
         dq[idx].push_front(dq[idx].back());
@@ -24,7 +22,8 @@ void rotate(int idx, int dir, int widx) {
     if (idx > 0 && widx <= 0) {
         if (dq[idx - 1][2] != left)
             rotate(idx - 1, -dir, -1);
-    } else if (idx < 3 && widx >= 0)
+    }
+    if (idx < 3 && widx >= 0)
         if (dq[idx + 1][6] != right)
             rotate(idx + 1, -dir, 1);
 }
