@@ -1,3 +1,9 @@
+/*
+ * Memory : 2180 Kb
+ * Run-Time : 0 ms
+ * URL : https://www.acmicpc.net/problem/14891
+ * */
+
 #include <iostream>
 #include <math.h>
 #include <queue>
