@@ -1,3 +1,12 @@
+/*
+ * SW Expert Academy 1228 Cipher1
+ *
+ * Memory : 12,524Kb
+ * RunTime : 7ms
+ *
+ * URL : https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV14w-rKAHACFAYD
+ * */
+
 #include <iostream>
 #include <list>
 using namespace std;
