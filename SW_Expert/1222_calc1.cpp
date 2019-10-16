@@ -1,3 +1,12 @@
+/*
+ * SW Expert Academy 1222 calculator1
+ *
+ * Memory : 12,492Kb
+ * RunTime : 6ms
+ *
+ * URL : https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV14mbSaAEwCFAYD
+ * */
+
 #include <iostream>
 using namespace std;
 
