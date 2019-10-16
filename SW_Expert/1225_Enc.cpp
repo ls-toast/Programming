@@ -1,3 +1,12 @@
+/*
+ * SW Expert Academy 1225 Cypher Generator
+ *
+ * Memory : 12,636Kb
+ * RunTime : 20ms
+ *
+ * URL : https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV14uWl6AF0CFAYD
+ * */
+
 #include <iostream>
 #include <queue>
 using namespace std;
