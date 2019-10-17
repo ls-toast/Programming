@@ -1,3 +1,12 @@
+/*
+ * SW Expert Academy 1221 GNS
+ *
+ * Memory : 13,100Kb
+ * RunTime : 100ms
+ *
+ * URL : https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV14jJh6ACYCFAYD
+ * */
+
 #include <iostream>
 #include <algorithm>
 #include <vector>
