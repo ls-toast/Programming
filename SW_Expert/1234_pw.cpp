@@ -1,3 +1,12 @@
+/*
+ * SW Expert Academy 1234 Password
+ *
+ * Memory : 12,492Kb
+ * RunTime : 7ms
+ *
+ * URL : https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV14_DEKAJcCFAYD
+ * */
+
 #include <iostream>
 #include <vector>
 using namespace std;
