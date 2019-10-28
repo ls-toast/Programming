@@ -3,9 +3,9 @@
 
 using namespace std;
 
-long long arr[100000];
+int arr[100000];
 int solution(int n) {
-    long long answer = 0;
+    int answer = 0;
     if(n == 0 || n == 1)
         return n;
     else if(arr[n] == 0)
