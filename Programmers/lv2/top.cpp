@@ -7,29 +7,21 @@ vector<int> solution(vector<int> heights) {
     vector<int> answer;
     vector<int> tmp;
     int i,j;
-    for(i = 0 ; i < heights.size(); i ++)
+    answer.push_back(0);
+    for(i = 1 ; i < heights.size(); i ++)
     {
-        if(tmp.empty())
+        bool chk = false;
+        for(j = i; j >= 0; j --)
         {
-            tmp.push_back(heights[i]);
-            answer.push_back(0);
-        }
-        else
-        {
-            bool chk = false;
-            for(j = tmp.size()-1; j >= 0; j --)
+            if(heights[j] > heights[i])
             {
-                if(tmp[j] > heights[i])
-                {
-                    chk = true;
-                    answer.push_back(j+1);
-                    break;
-                }
+                chk = true;
+                answer.push_back(j+1);
+                break;
             }
-            if(!chk)
-                answer.push_back(0);
-            tmp.push_back(heights[i]);
         }
+        if(!chk)
+            answer.push_back(0);
     }
     return answer;
 }
