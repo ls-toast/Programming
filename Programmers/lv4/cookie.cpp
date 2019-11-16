@@ -12,23 +12,23 @@ int solution(vector<int> cookie) {
     for(i = 1; i < cookie.size(); i ++)
         sum.push_back(cookie[i]+sum[i-1]);
 
-    for(i = 0; i < sum.size()-1; i++)
+    for(i = 1; i < sum.size()-1; i++)
     {
         int a = sum[i];
-        int b = 0;
-        if(i > 0)
-            for(j = 0; j < i-1; j ++)
-                a -= cookie[j];
-        for(j = i+1; j < cookie.size(); j ++)
+        for(j = i+1; j < sum.size(); j ++)
         {
-            b += cookie[j];
-            if(a == b && answer < a)
-            {
-                answer = a;
-                break;
-            }
-            else if(b > a)
-                break;
+            int b = sum[j] - a;
+            if(answer > a)
+                continue;
+            else
+                for(int k = 0; k < i; k++)
+                {
+                    if(a - sum[k] == b && answer < b)
+                    {
+                        answer = a - sum[k];
+                        break;
+                    }
+                }
         }
     }
     if(answer < 0)
