@@ -12,14 +12,19 @@ int solution(vector<int> cookie) {
     for(i = 1; i < cookie.size(); i ++)
         sum.push_back(cookie[i]+sum[i-1]);
 
-    for(i = 1; i < sum.size()-1; i++)
+    for(i = 0; i < sum.size()-1; i++)
     {
         int a = sum[i];
         for(j = i+1; j < sum.size(); j ++)
         {
             int b = sum[j] - a;
-            if(answer > a)
-                continue;
+            if(answer < a && a == b)
+	{
+		answer = a;
+		break;
+	}
+	else if(answer > b)
+		continue;
             else
                 for(int k = 0; k < i; k++)
                 {
