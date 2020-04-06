@@ -5,7 +5,6 @@ using namespace std;
 
 vector<int> solution(vector<int> heights) {
     vector<int> answer;
-    vector<int> tmp;
     int i,j;
     answer.push_back(0);
     for(i = 1 ; i < heights.size(); i ++)
